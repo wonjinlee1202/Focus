@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+   <div id="notify-wrapper">
+    <div id="notify-header">
+      <span>Focus</span>
+      <input type="checkbox" id="toggle" />
+      <label for="toggle"></label>
+    </div>
+    <div id="time-left-display">0:00</div>
+    <div class="strike">
+        <span>OPTIONS</span>
+     </div>
+     <div class="slidecontainer">
+        <p id="work-text">Work Time:</p>
+        <input type="range" min="1" max="100" value="50" class="slider" id="workRange">
+        <div class="slider-text">
+            <p>0 min</p><p>60 min</p>
+        </div>
+      </div>
+      <div class="slidecontainer">
+         <p id="rest-text">Rest Time:</p>
+         <input type="range" min="1" max="100" value="50" class="slider" id="restRange">
+        <div class="slider-text">
+            <p>0 min</p><p>60 min</p>
+        </div>
+       </div>
+    <input type="checkbox" id="loop"/><div style="display: inline; margin-left: 7px; position: relative; top: -3px;">Loop</div>
+    <div class="dropdown">
+        <div class="dropdown-header" id="dropheader">&#x25B6; Disabled Websites</div>
+        <div id="dropdown-content">
+          <ul id = "url-list"></ul>
+          <form id="url-form" autocomplete="off">
+            <input type="text" id="new-url" placeholder="Enter a URL" required>
+            <button type="submit">Add URL</button>
+          </form>
+        </div>
+      </div>
+   </div>
+   <script src="popup.js"></script>
+  </body>
+</html>

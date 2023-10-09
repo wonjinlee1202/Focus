@@ -1,0 +1,227 @@
+body {
+    width: 250px;
+}
+
+#header h1 {
+    display: inline
+}
+
+#notify-wrapper {
+    padding: 5px;
+}
+
+#notify-header span {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.button {
+    font-family: Roboto, system-ui, sans-serif;
+    align-items: center;
+    border: 1px solid rgb( 218, 220, 224 );
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgb( 26, 115, 232 );
+    cursor: pointer;
+    display: inline-flex;
+    flex-shrink: 0;
+    font-weight: 500;
+    height: 32px;
+    justify-content: center;
+    min-width: 5.14em;
+    outline-width: 0;
+    padding: 8px 16px;
+    position: relative;
+    user-select: none;
+    background: white;
+    margin: 10px 0 5px 10px;
+}
+
+.notify-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.button:hover {
+    background: rgba( 66, 133, 244, .04 );
+    border-color: 210, 227, 252;
+}
+
+.button.primary {
+    background: rgb( 26, 115, 232 );
+    color: #fff;
+    border-color: rgb( 26, 115, 232 );
+}
+
+.button.primary:hover {
+    background: rgba( 26, 115, 232, 0.9 );
+    box-shadow: 0 1px 2px 0 rgba( 66, 133, 244, .3),
+    0 1px 3px 1px rgba( 66, 133, 244, .15);
+}
+
+textarea {
+    border: 2px solid rgba( 26, 115, 232, 0.4 );
+    padding: 8px;
+    border-radius: 4px;
+    display: block;
+    width: 224px;
+    margin-top: 5px;
+}
+
+.notify-buttons p {
+    margin: 10px 0 5px 10px;
+}
+
+#toggle {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 105px;
+}
+
+label::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+#toggle:checked + label {
+    background-color: #2196F3;
+}
+
+#toggle:checked + label::before {
+    transform: translateX(20px);
+}
+
+#time-left-display {
+    text-align: center;
+    font-size: 50px;
+    color:  rgba( 26, 115, 232, 0.9 );
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+
+.strike > span {
+    position: relative;
+    display: inline-block;
+}
+
+.strike > span:before,
+.strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: black;
+}
+
+.strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.slider {
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+/* Initially hide the dropdown content */
+#dropdown-content {
+    display: none;
+  }
+  
+  /* Style the header */
+  .dropdown-header {
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .dropdown {
+    margin-top: 15px;
+  }
+
+#loop {
+    margin-top: 15px;
+}
+
+.slider-text {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -10px;
+}
+
+/* Style for the list items and delete buttons */
+.url-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .remove-button {
+    background-color: #ff6666;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Align the delete buttons to the right */
+  .remove-button {
+    margin-left: auto;
+  }
