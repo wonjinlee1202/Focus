@@ -1,8 +1,8 @@
 div {
-    display: flex; /* Use flexbox layout */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Set a fixed height, e.g., the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     font-size: 50px;
     color: rgb( 26, 115, 232 );
 }

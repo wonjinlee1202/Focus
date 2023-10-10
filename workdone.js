@@ -4,10 +4,9 @@ chrome.windows.getCurrent(async function (currentWindow) {
     await chrome.storage.sync.set({workWindow: currentWindow.id})
   });
 
-button.addEventListener( 'click', () => {
+button.addEventListener( 'click', function () {
     chrome.runtime.sendMessage( 'now-rest' );
-    chrome.windows.getCurrent(async function (currentWindow) {    
-        // Close the current window by its ID
-        chrome.windows.remove(currentWindow.id);
-      });
+    chrome.windows.getCurrent(async function (currentWindow) {  
+      chrome.windows.remove(currentWindow.id);
+    });
 });

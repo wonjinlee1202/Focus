@@ -180,20 +180,18 @@ label::before {
     cursor: pointer;
 }
 
-/* Initially hide the dropdown content */
 #dropdown-content {
     display: none;
-  }
+}
   
-  /* Style the header */
-  .dropdown-header {
+.dropdown-header {
     cursor: pointer;
     font-weight: bold;
-  }
+}
 
-  .dropdown {
+.dropdown {
     margin-top: 15px;
-  }
+}
 
 #loop {
     margin-top: 15px;
@@ -206,22 +204,20 @@ label::before {
     top: -10px;
 }
 
-/* Style for the list items and delete buttons */
 .url-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5px;
-  }
+}
   
-  .remove-button {
+.remove-button {
     background-color: #ff6666;
     color: #fff;
     border: none;
     cursor: pointer;
-  }
+}
   
-  /* Align the delete buttons to the right */
-  .remove-button {
+.remove-button {
     margin-left: auto;
-  }
+}
