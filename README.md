@@ -6,3 +6,5 @@ Features:
 - Rest Time: adjustable countdown timer for user to take a short break
 - Loop: option to continuously loop Work + Rest Time
 - Disabled Websites: custom list of websites for user to disable during Work Time
+
+https://chrome.google.com/webstore/detail/focus/ecepbjpigolipikpdbeilbkaieekbcoj/
