@@ -1,10 +1,29 @@
-# Focus
-The Focus Chrome Extension allows users to enter "Focus" mode in order to work productively and clear distractions.
+# Focus Chrome Extension
 
-Features:
-- Work Time: adjustable countdown timer for user to focus on work
-- Rest Time: adjustable countdown timer for user to take a short break
-- Loop: option to continuously loop Work + Rest Time
-- Disabled Websites: custom list of websites for user to disable during Work Time
+**Focus** is a productivity-enhancing Chrome Extension that helps you stay on task by blocking distractions and encouraging focused work sessions. With customizable timers and a site-blocking feature, it's perfect for anyone practicing the Pomodoro technique or simply aiming for better time management.
 
-https://chrome.google.com/webstore/detail/focus/ecepbjpigolipikpdbeilbkaieekbcoj/
+---
+
+## Features
+
+- **Work Timer**  
+  Set a custom countdown for focused work time.
+
+- **Rest Timer**  
+  Configure a break timer to recharge between work sessions.
+
+- **Loop Mode**  
+  Automatically alternate between Work and Rest periods for continuous productivity.
+
+- **Disabled Websites**  
+  Create a personalized list of distracting websites to block during Work Time.
+
+---
+
+## Usage
+
+1. Install from the Chrome Web Store [here](https://chromewebstore.google.com/detail/focus/ecepbjpigolipikpdbeilbkaieekbcoj)
+2. Click the extension icon to interact with the menu
+5. You're ready to Focus!
+
+---
